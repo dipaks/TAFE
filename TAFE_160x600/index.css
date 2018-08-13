@@ -1,0 +1,246 @@
+*{
+	position: absolute;
+}
+
+ *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@font-face {font-family: 'Korolev-Medium';src: url('322179_7_0.eot');src: url('322179_7_0.eot?#iefix') format('embedded-opentype'),url('322179_7_0.woff2') format('woff2'),url('322179_7_0.woff') format('woff'),url('322179_7_0.ttf') format('truetype');}
+@font-face {font-family: 'Korolev-Bold';src: url('322179_4_0.eot');src: url('322179_4_0.eot?#iefix') format('embedded-opentype'),url('322179_4_0.woff2') format('woff2'),url('322179_4_0.woff') format('woff'),url('322179_4_0.ttf') format('truetype');}
+
+#banner{
+	background:#cd8bda;
+	visibility: hidden;
+}
+
+#banner.show {
+    visibility:visible;
+}
+
+#banner {
+	width: 160px;
+	height: 600px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	overflow: hidden;
+	border: 1px solid #000000;
+}
+
+.hide{
+	opacity: 0;
+}
+#click_through{
+	z-index: 100000;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+#click_through, #click_through a{
+	left: 0;
+	top: 0;
+}
+
+
+/*Extra*/
+
+#bub1, #bub2, #bub3, #bub4 {
+	position: absolute;
+	background-color:#AA7BC9;
+	/* opacity:.1; */
+}
+#bub1 {
+	height: 42px;
+	width: 117px;
+	left: 17px;
+	top: 105px;
+	z-index: 10;
+}
+#bub2 {
+	height: 139px;
+	width: 94px;
+	left: 0px;
+	top: 147px;
+	z-index: 15;
+}
+#bub3 {
+	height: 24px;
+	width: 24px;
+	left: 0px;
+	top: 286px;
+	z-index: 18;
+}
+#bub4 {
+	height: 24px;
+	width: 24px;
+	left: 24px;
+	top: 310px;
+	z-index: 20;
+}
+#btxt {
+	position: absolute;
+	left: 10px;
+	top: 99px;
+	opacity: 1;
+	z-index: 22;
+}
+#etxt {
+	position: absolute;
+	left: 85px;
+	top: 135px;
+	opacity: 1;
+	z-index: 22;
+}
+#leftper {
+	position: absolute;
+	left: -20px;
+	top: 340px;
+	opacity: 1;
+	z-index: 24;
+}
+#talogo {
+	position: absolute;
+	left: 7px;
+	top: 23px;
+	opacity: 1;
+	z-index: 25;
+}
+#dy_headline {
+	position: absolute;
+	font-size: 25px;
+	color: #FFFFFF;
+	font-family: Korolev-Bold;
+	line-height: 24px;
+	left: 15px;
+	top: 85px;
+	width: 130px;
+	opacity: 0;
+	z-index: 30;
+	text-transform:uppercase;
+}
+#dytxt2 {
+	position: absolute;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: Korolev-Medium;
+	line-height: 20px;
+	left: 17px;
+	top: 145px;
+	width: 130px;
+	opacity: 0;
+	z-index: 35;
+}
+#dytxt3 {
+	position: absolute;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: Korolev-Medium;
+	line-height: 20px;
+	left: 17px;
+	top: 120px;
+	width: 130px;
+	opacity: 0;
+	z-index: 35;
+}
+#dytxt4 {
+	position: absolute;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: Korolev-Medium;
+	line-height: 20px;
+	left: 17px;
+	top: 120px;
+	width: 130px;
+	opacity: 0;
+	z-index: 35;
+}
+
+#cta-firstframe
+{
+	position: absolute;
+	left:10px;
+    width:140px;
+	top: 262px;
+	z-index: 40;
+	padding-top:6px;
+	padding-bottom:3px;
+	background-color:#231f20;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#fstFramebuttontxt
+{
+	text-align:center;
+	font-size:18px;
+	color:#FFFFFF;
+	font-family: Korolev-Medium;
+    line-height:0;
+	text-transform:uppercase;
+	position:relative;
+}
+#cta {
+    padding-top: 6px;
+	padding-bottom: 3px;
+	background-color: #231f20;
+	vertical-align: middle;
+	text-align: center;
+	position: absolute;
+	left: 10px;
+    width: 140px;
+	top: 253px;
+	z-index: 40;
+	opacity: 0;
+}
+#buttontxt {
+	text-align: center;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: Korolev-Medium;
+	line-height: 0;
+	text-transform: uppercase;
+	position:relative;
+}
+#rto-code {
+	position: absolute;
+	right: 4px;
+	opacity: 0;
+	bottom: 4px;
+	font-size: 10px;
+	color: #ffffff;
+	z-index: 500;
+	font-family: Korolev-Medium;
+}
+#loader {
+    text-align: center;
+    line-height: 600px;
+}
+#content
+{
+	position:absolute;
+	width:160px;
+	display:table;
+	height:600px;
+	left:0px;
+	top:0px;
+}
+#background {
+    width:160px;
+    height:600px;
+}
+#content.show {
+    display:block;
+}
