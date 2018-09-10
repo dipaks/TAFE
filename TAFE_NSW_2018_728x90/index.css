@@ -21,13 +21,14 @@ body, html{
 #banner{
 	visibility: hidden;
 }
+
 #banner.show {
     visibility:visible;
 }
 
 #banner {
-	width: 300px;
-	height: 250px;
+	width: 728px;
+	height: 90px;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -55,41 +56,41 @@ body, html{
 
 /*Extra*/
 
-#bub1, #bub2, #bub3{
+#bub1, #bub2{
 	position: absolute;
 	background-color:#AA7BC9;
 	/* opacity:.1; */
 }
+#talogo{
+	position: absolute;
+	left: 605px;
+	top: 31px;
+	opacity:1;
+	z-index:40;
+}
 #bub1
 {
-	height: 40px;
-	width: 112px;
-	left: 31px;
-	top: 28px;
+	height: 36px;
+	width: 203px;
+	left: 169px;
+	top: 0px;
 	z-index:10;
 }
 #bub2
 {
-	height: 128px;
-	width: 105px;
-	left: 0px;
-	top: 68px;
+	height: 55px;
+	width: 164px;
+	left: 138px;
+	top: 36px;
 	z-index:15;
 }
-#bub3
-{
-	height: 21px;
-	width: 22px;
-	left: 104px;
-	top: 196px;
-	z-index:20;
-}
+
 #betxt{
 	position: absolute;
-	left: 25px;
-	top: 48px;
+	left: 176px;
+	top: 6px;
 	opacity:1;
-	z-index:15;
+	z-index:18;
 }
 #leftper{
 	position: absolute;
@@ -98,66 +99,62 @@ body, html{
 	opacity:1;
 	z-index:20;
 }
-
-#talogo{
-	position: absolute;
-	left: 18px;
-	top: 207px;
-	opacity:1;
-	z-index:25;
-}
 #dy_headline{
 	position: absolute;
-	font-size:25px;
+	font-size:20px;
 	color:#FFFFFF;
 	font-family: Korolev-Bold;
-	line-height:24px;
-	left: 20px;
-	top: 30px;
-	width:180px;
+	line-height:26px;
+	left: 180px;
+	top: 10px;
+	width:280px;
 	opacity:0;
-	z-index:30;
+	z-index:25;
 	text-transform:uppercase;
+	
 }
 #dytxt2{
 	position: absolute;
 	font-size:18px;
 	color:#FFFFFF;
-	font-family: Korolev-Medium;
+	 font-family: Korolev-Medium;
 	line-height:20px;
-	left: 20px;
-	top: 85px;
-	width:195px;
-	opacity:0;z-index:35;
+	left: 180px;
+	top: 40px;
+	width:235px;
+	opacity:0;z-index:30;
 }
 #dytxt3{
 	position: absolute;
 	font-size:18px;
 	color:#FFFFFF;
-	font-family: Korolev-Medium;
+	 font-family: Korolev-Medium;
 	line-height:20px;
-	left: 20px;
-	top: 75px;
-	width:195px;
-	opacity:0;z-index:35;
+	left: 180px;
+	top: 15px;
+	width:235px;
+	opacity:0;z-index:30;
 }
 #dytxt4{
 	position: absolute;
 	font-size:18px;
 	color:#FFFFFF;
-	font-family: Korolev-Medium;
+	 font-family: Korolev-Medium;
 	line-height:20px;
-	left: 20px;
-	top: 75px;
-	width:195px;
-	opacity:0;z-index:35;
+	left: 180px;
+	top: 15px;
+	width:235px;
+	opacity:0;z-index:30;
 }
 #dytxt2 span, #dytxt3 span {
 	position: relative;
 }
-
 #cta
 {
+	position: absolute;
+	left:461px;
+	top: 31px;
+	z-index:35;
 	padding-left:8px;
 	padding-right:8px;
 	padding-top:6px;
@@ -166,24 +163,16 @@ body, html{
 	vertical-align: middle;
 	text-align: center;
 	position: absolute;
-	left: 20px;
-	top: 154px;
-	z-index: 40;
 	opacity:0;
 }
-#cta-firstframe
-{
-	position: absolute;
-	left: 145px;
-	top: 183px;
-	z-index: 40;
-	padding-left:8px;
-	padding-right:8px;
-	padding-top:6px;
-	padding-bottom:3px;
-	background-color:#231f20;
-	vertical-align: middle;
-	text-align: center;
+#rto-code{
+	position:absolute;
+ right:5px;
+ opacity:0;
+ bottom:5px;
+ font-size:10px;
+ color:#fff;
+ font-family: Korolev-bold;
 }
 #buttontxt
 {
@@ -195,6 +184,20 @@ body, html{
 	text-transform:uppercase;
 	position: relative;
 }
+#cta-firstframe
+{
+	position: absolute;
+	left: 424px;
+	top: 29px;
+	z-index: 40;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:6px;
+	padding-bottom:3px;
+	background-color:#231f20;
+	vertical-align: middle;
+	text-align: center;
+}
 #fstFramebuttontxt
 {
 	text-align:center;
@@ -203,33 +206,22 @@ body, html{
 	font-family: Korolev-Medium;
     line-height:0;
 	text-transform:uppercase;
-	position: relative;
-}
-#rto-code
-{
-	position:absolute;
-	right:85px;
-	opacity:0;
-	bottom:4px;
-	font-size:10px;
-	z-index:500;
-	color:#fff;
-	font-family: Korolev-bold;
+	position:relative;
 }
 #loader {
     text-align: center;
-    line-height: 250px;
+    line-height: 90px;
 }
 #content
 {
 	position:absolute;
-	width:300px;
+	width:728px;
 	display:table;
-	height:250px;
+	height:90px;
 	left:0px;
 	top:0px;
 }
 #background {
-    width:300px;
-    height:250px;
+    width:728px;
+    height:90px;
 }

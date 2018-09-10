@@ -21,13 +21,14 @@ body, html{
 #banner{
 	visibility: hidden;
 }
+
 #banner.show {
     visibility:visible;
 }
 
 #banner {
-	width: 970px;
-	height: 250px;
+	width: 320px;
+	height: 50px;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -58,104 +59,126 @@ body, html{
 #bub1, #bub2{
 	position: absolute;
 	background-color:#AA7BC9;
-	/* opacity:.1; */
-}
-#talogo{
-	position: absolute;
-	right: 20px;
-top: 178px;
 	opacity:1;
-	z-index:40;
 }
 #bub1
 {
-	height: 90px;
-	width: 225px;
-	left: 169px;
-	top: 36px;
+	width: 320px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
 	z-index:10;
 }
 #bub2
 {
-	height: 90px;
-	width: 220px;
-	left: 137px;
- 	top: 126px;
+	height: 13px;
+	width: 300px;
+	left: 0px;
+	top:37px;
 	z-index:15;
+	opacity:0;
 }
-
 #betxt{
 	position: absolute;
-	left: 176px;
-	top: 43px;
+	left: 225px;
+	top: 0px;
 	opacity:1;
-	z-index:18;
+	z-index:15;
 }
 #leftper{
 	position: absolute;
-	left:-5px;
+	left: 53px;
 	top: 0px;
-	opacity:1;
+	opacity:0;
 	z-index:20;
+}
+
+#talogo{
+	position: absolute;
+	left:223px;
+	top: 8px;
+    width:92px;
+    height:24px;
+	opacity:0;
+	z-index:25;
 }
 #dy_headline{
 	position: absolute;
-	font-size:32px;
+	font-size:20px;
 	color:#FFFFFF;
 	font-family: Korolev-Bold;
-	line-height:34px;
-	left: 248px;
-	top: 60px;	
-	width:280px;
+	line-height:20px;
+	left:14px;
+	top:15px;
+	width:210px;
 	opacity:0;
-	z-index:25;
 	text-transform:uppercase;
-	
-}
-#dytxt2, #dytxt3{
-	position: absolute;
-	font-size:25px;
-	color:#FFFFFF;
-    font-family: Korolev-Medium;
-	line-height:27px;
-	opacity:0;
-}
-#dytxt2{
-	left: 245px;
-	top: 100px;
-	width: 240px;
 	z-index:30;
 }
+#dytxt2{
+	position: absolute;
+	font-size:15px;
+	color:#FFFFFF;
+	 font-family: Korolev-Medium;
+	line-height:16px;
+	left: 14px;
+	top: 3px;
+	width:215px;
+	opacity:0;
+	z-index:35;
+	display:inline-block;
+	position: relative;
+}
 #dytxt3{
-	left: 245px;
-	top: 80px;
-	width: 260px;	
-	z-index:31;
+	position: absolute;
+	font-size:15px;
+	color:#FFFFFF;
+	 font-family: Korolev-Medium;
+	line-height:16px;
+	left: 14px;
+	width:215px;
+	opacity:0;
+	z-index:35;
+	vertical-align: middle;
+	display:inline-block;
+	position: relative;
+}
+#dytxt4{
+	position: absolute;
+	font-size:15px;
+	color:#FFFFFF;
+	font-family: Korolev-Medium;
+	line-height:16px;
+	left: 14px;
+	top: 3px;
+	width:244px;
+	opacity:0;
+	z-index:35;
+	display:inline-block;
+	position: relative;
+}
+#dytxt2 span, #dytxt3 span {
+	position: relative;
+}
+.textWrapper {
+	line-height: 32px;
 }
 #cta
 {
 	position: absolute;
-	left:700px;
-	top: 109px;
-	z-index:35;
-	padding-left:15px;
-	padding-right:15px;
-	padding-top:9px;
-	padding-bottom:7px;
+	left: 12px;
+	top: 12px;
+	z-index: 40;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:6px;
+	padding-bottom:3px;
 	background-color:#231f20;
 	vertical-align: middle;
 	text-align: center;
 	position: absolute;
 	opacity:0;
-}
-#rto-code{
-position:absolute;
- right:22px;
- opacity:0;
- bottom:5px;
- font-size:10px;
- color:#fff;
- font-family: Korolev-bold;
+	
 }
 #buttontxt
 {
@@ -167,16 +190,27 @@ position:absolute;
 	text-transform:uppercase;
 	position: relative;
 }
+#rto-code
+{
+	position:absolute;
+	right:4px;
+	opacity:0;
+	bottom:2px;
+	font-size:9px;
+	z-index:500;
+	color:#fff;
+	font-family: Korolev-bold;
+}
 #cta-firstframe
 {
 	position: absolute;
-	left:610px;
-	top: 109px;
+	left: 424px;
+	top: 29px;
 	z-index: 40;
-	padding-left:15px;
-	padding-right:15px;
-	padding-top:9px;
-	padding-bottom:7px;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:6px;
+	padding-bottom:3px;
 	background-color:#231f20;
 	vertical-align: middle;
 	text-align: center;
@@ -189,7 +223,6 @@ position:absolute;
 	font-family: Korolev-Medium;
     line-height:0;
 	text-transform:uppercase;
-	position: relative;
 }
 #loader {
     text-align: center;
@@ -198,13 +231,13 @@ position:absolute;
 #content
 {
 	position:absolute;
-	width:970px;
+	width:728px;
 	display:table;
-	height:250px;
+	height:90px;
 	left:0px;
 	top:0px;
 }
 #background {
-    width:970px;
-    height:250px;
+    width:728px;
+    height:90px;
 }

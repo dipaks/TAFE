@@ -166,6 +166,9 @@ body, html{
 	opacity: 0;
 	z-index: 35;
 }
+#dytxt2 span, #dytxt3 span {
+	position: relative;
+}
 
 #cta-firstframe
 {

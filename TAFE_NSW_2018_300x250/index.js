@@ -32,11 +32,12 @@ boilerplate.DynamicContentElements = function () {
     devDynamicContent.TAFEDynamicBanners_300x250[0]._id = 0;
     devDynamicContent.TAFEDynamicBanners_300x250[0].unique_id = 1;
     devDynamicContent.TAFEDynamicBanners_300x250[0].ad_type = "";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].ad_name = "Generic";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].course_name = "BUSINESS & FINANCE";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].ad_name = "ad1";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].location = "Brookvale,New South Wales,Australia";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].course_area = "Animal, Agriculture & Environment";
     devDynamicContent.TAFEDynamicBanners_300x250[0].logo = {};
     devDynamicContent.TAFEDynamicBanners_300x250[0].logo.Type = "file";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].logo.Url = "https://s0.2mdn.net/ads/richmedia/studio/60006638/60006638_20180619211616433_waratahlogo.png";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].logo.Url = "https://s0.2mdn.net/ads/richmedia/studio/60006638/60006638_20180807215853334_logos.png";
     devDynamicContent.TAFEDynamicBanners_300x250[0].hero_image = {};
     devDynamicContent.TAFEDynamicBanners_300x250[0].hero_image.Type = "file";
     devDynamicContent.TAFEDynamicBanners_300x250[0].hero_image.Url = "https://s0.2mdn.net/ads/richmedia/studio/60006638/60006638_20180619211642866_mustardshorts.png";
@@ -47,27 +48,28 @@ boilerplate.DynamicContentElements = function () {
     devDynamicContent.TAFEDynamicBanners_300x250[0].backgroundColor = "#cd8bda";
     devDynamicContent.TAFEDynamicBanners_300x250[0].bub_backgroundColor = "#aa7bC9";
     devDynamicContent.TAFEDynamicBanners_300x250[0].textColour = "#FFFFFF";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].fontSize_HeadlineText = "25px";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].fontSize_HeadlineText = 25;
     devDynamicContent.TAFEDynamicBanners_300x250[0].frame1ButtonText = "BE AMBITIOUS";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].frame1HeadlineText = "BE<br>EMPLOYED";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].frame1SubText = "With connections to over 25,000 employers.";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].frame2Text = "Mid-year enrolments<br>are now open at";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].TAFE_Location = "<br>Sydney TAFE.";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].fontSize_Text = "18px";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].rtoCode = 91430;
-    devDynamicContent.TAFEDynamicBanners_300x250[0].buttonText = "ENROL TODAY";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].frame2HeadlineText = "BE<br>EMPLOYED.";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].frame2SubText = "Explore <span>Animal, Agriculture & Environment<\/span> courses";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].frame3Text = "at the <span>Brookvale<\/span> campus.";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].frame4Text = "Enrolments are now open!";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].fontSize_Text = 18;
+    devDynamicContent.TAFEDynamicBanners_300x250[0].rtoCode = "RTO 91430";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].buttonText = "ENROL NOW";
     devDynamicContent.TAFEDynamicBanners_300x250[0].buttonColour = "#000000";
     devDynamicContent.TAFEDynamicBanners_300x250[0].buttonTextColour = "#FFFFFF";
     devDynamicContent.TAFEDynamicBanners_300x250[0].exitUrl = {};
-    devDynamicContent.TAFEDynamicBanners_300x250[0].exitUrl.Url = "https://www.tafensw.edu.au/courses/hospitality-courses";
-    devDynamicContent.TAFEDynamicBanners_300x250[0].isDefault = true;
+    devDynamicContent.TAFEDynamicBanners_300x250[0].exitUrl.Url = "https://www.tafensw.edu.au/courses/animal-agriculture-environmental-studies";
+    devDynamicContent.TAFEDynamicBanners_300x250[0].isDefault = false;
     Enabler.setDevDynamicContent(devDynamicContent);
-
 	
-	frame1_ctaText = document.getElementById('fstFramebuttontxt');
-	headline_text = document.getElementById('dy_headline');
-	text2 = document.getElementById('dytxt2');
-	text3 = document.getElementById('dytxt3');
+	
+	f1_ctaText = document.getElementById('fstFramebuttontxt');
+	f2_headline_text = document.getElementById('dy_headline');
+	f2_subText = document.getElementById('dytxt2');
+	f3_text = document.getElementById('dytxt3');
+	f4_text = document.getElementById('dytxt4');
 	logo = document.getElementById('talogo');
 	be_image = document.getElementById('betxt');
 	hero_image = document.getElementById('leftper');
@@ -84,12 +86,13 @@ boilerplate.DynamicContentElements = function () {
 	logo.src = dynamicContent.TAFEDynamicBanners_300x250[0].logo.Url;
 	be_image.src = dynamicContent.TAFEDynamicBanners_300x250[0].be_image1.Url;
 	hero_image.src = dynamicContent.TAFEDynamicBanners_300x250[0].hero_image.Url;
-	frame1_ctaText.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].frame1ButtonText;
-	headline_text.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].frame1HeadlineText;
-	headline_text.style.cssText = "font-size:" + dynamicContent.TAFEDynamicBanners_300x250[0].fontSize_HeadlineText + "; color:" + dynamicContent.TAFEDynamicBanners_300x250[0].textColour + ";";
-	text2.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].frame1SubText;
-	text3.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].frame2Text + " " + dynamicContent.TAFEDynamicBanners_300x250[0].TAFE_Location;
-	text2.style.cssText = text3.style = "font-size:" + dynamicContent.TAFEDynamicBanners_300x250[0].fontSize_Text + "; color:" + dynamicContent.TAFEDynamicBanners_300x250[0].textColour + ";";
+	f1_ctaText.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].frame1ButtonText;
+	f2_headline_text.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].frame2HeadlineText;
+	f2_headline_text.style.cssText = "font-size:" + dynamicContent.TAFEDynamicBanners_300x250[0].fontSize_HeadlineText + "px; color:" + dynamicContent.TAFEDynamicBanners_300x250[0].textColour + ";";
+	f2_subText.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].frame2SubText;
+	f3_text.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].frame3Text;
+	f4_text.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].frame4Text;
+	f2_subText.style.cssText = f3_text.style.cssText = f4_text.style.cssText = "font-size:" + dynamicContent.TAFEDynamicBanners_300x250[0].fontSize_Text + "px; color:" + dynamicContent.TAFEDynamicBanners_300x250[0].textColour + "; line-height:" + (dynamicContent.TAFEDynamicBanners_300x250[0].fontSize_Text+2) + "px;";
 	rto_code.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].rtoCode;
 	cta_text.innerHTML = dynamicContent.TAFEDynamicBanners_300x250[0].buttonText;
 	cta_text.style.cssText = "color:" + dynamicContent.TAFEDynamicBanners_300x250[0].buttonTextColour + ";";
@@ -109,7 +112,7 @@ boilerplate.clickTag = function () {
 //Animate contents
 boilerplate.executeAnimation = function (){
 	
-	var tl = new TimelineMax({repeat:-1, repeatDelay:10});
+	var tl = new TimelineMax({repeat:0, repeatDelay:10});
 	//var tl = new TimelineMax({onComplete:completeHandler});
 		
 	tl.to('#leftper',.50,{left:'28px'},'+=1')
@@ -120,7 +123,6 @@ boilerplate.executeAnimation = function (){
 	.to('#betxt',.50,{opacity:0, ease: Power2. easeInOut},'-=0.5')
 	.to('#bub1',.50,{width:'224px',top:'20px',height:'55px',left:'12px'},'-=0.5')
 	.to('#dy_headline',.50,{opacity:1, ease: Power2. easeIn},'=0.0')
-	.to('#cta',.50,{opacity:1, ease: Power2. easeIn},'-=0.5') //
 	.to('#bub1',.50,{width:'260px', height:'43px', top:'16px'},'+=1.0')
 	.to('#bub2',.50,{width:'226px',height:'137px', top:'59px'},'-=0.6')
 	.to('#bub3',.50,{top:'195px', left:'226px'},'-=0.5')
@@ -129,7 +131,10 @@ boilerplate.executeAnimation = function (){
 	.to('#dy_headline',.50,{opacity:0, ease: Power2. easeInOut},'+=2.0')
 	.to('#dytxt2',.50,{opacity:0, ease: Power2. easeInOut},'-=0.5')
 	.to('#dytxt3',.50,{opacity:1, ease: Power2. easeIn},'=0')
+	.to('#cta',.50,{opacity:1, ease: Power2. easeIn},'-=0.0')
 	.to('#rto-code',1.0,{opacity:1, onComplete:completeHandler},'+=0.30')
+	.to('#dytxt3',.50,{opacity:0, ease: Power2. easeIn},'+=2.0')
+	.to('#dytxt4',.50,{opacity:1, ease: Power2. easeIn},'=0')
 	
 	//Cta Button Effect
 	function completeHandler () {

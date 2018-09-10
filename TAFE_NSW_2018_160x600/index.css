@@ -139,7 +139,7 @@ body, html{
 	line-height: 20px;
 	left: 17px;
 	top: 145px;
-	width: 130px;
+	width: 120px;
 	opacity: 0;
 	z-index: 35;
 }
@@ -166,6 +166,9 @@ body, html{
 	width: 130px;
 	opacity: 0;
 	z-index: 35;
+}
+#dytxt2 span, #dytxt3 span {
+	position: relative;
 }
 
 #cta-firstframe
