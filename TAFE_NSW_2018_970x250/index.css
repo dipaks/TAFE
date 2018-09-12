@@ -99,14 +99,14 @@ top: 178px;
 	z-index:20;
 }
 #dy_headline{
-	position: absolute;
+	position: relative;
 	font-size:32px;
 	color:#FFFFFF;
 	font-family: Korolev-Bold;
 	line-height:34px;
 	left: 248px;
 	top: 60px;	
-	width:280px;
+	width:250px;
 	opacity:0;
 	z-index:25;
 	text-transform:uppercase;
@@ -122,9 +122,10 @@ top: 178px;
 }
 #dytxt2{
 	left: 245px;
-	top: 100px;
+	top: 65px;
 	width: 212px;
 	z-index:30;
+	position: relative;
 }
 #dytxt3{
 	left: 245px;
