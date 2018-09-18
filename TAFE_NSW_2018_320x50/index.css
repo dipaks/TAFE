@@ -102,18 +102,23 @@ body, html{
 	opacity:0;
 	z-index:25;
 }
+#headlineWrap {
+	height: 50px;
+	line-height: 50px;
+}
 #dy_headline{
-	position: absolute;
+	position: relative;
 	font-size:20px;
 	color:#FFFFFF;
 	font-family: Korolev-Bold;
 	line-height:20px;
 	left:14px;
-	top:15px;
 	width:210px;
 	opacity:0;
 	text-transform:uppercase;
 	z-index:30;
+	vertical-align: middle;
+	display: inline-block;
 }
 #dytxt2{
 	position: absolute;
