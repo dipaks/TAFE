@@ -17,9 +17,13 @@ function init() {
 }
 
 boilerplate.processAd = function () {
-	document.getElementById("banner").className = "show"; //show banner
-	boilerplate.executeAnimation();
 	boilerplate.DynamicContentElements();
+	
+	var heroImg = document.getElementById("leftper");//Load hero image
+	heroImg.onload = function() {
+		document.getElementById("banner").className = "show"; //show banner
+		boilerplate.executeAnimation();
+	};
 }
 
 boilerplate.DynamicContentElements = function () {
@@ -31,16 +35,17 @@ boilerplate.DynamicContentElements = function () {
     devDynamicContent.TAFEDynamicBanners_300x600= [{}];
     devDynamicContent.TAFEDynamicBanners_300x600[0]._id = 0;
     devDynamicContent.TAFEDynamicBanners_300x600[0].unique_id = 1;
-    devDynamicContent.TAFEDynamicBanners_300x600[0].location = "Cessnock,New South Wales,Australia";
-    devDynamicContent.TAFEDynamicBanners_300x600[0].ad_name = "course-riv-1";
-    devDynamicContent.TAFEDynamicBanners_300x600[0].campus_location = "Riverina Institute";
+    devDynamicContent.TAFEDynamicBanners_300x600[0].location = "Singleton,Cessnock,Maitland,Muswellbrook,Newcastle,Central Coast,Raymond Terrace,Erina,Newcastle,New South Wales,Australia";
+    devDynamicContent.TAFEDynamicBanners_300x600[0].audience_Id = 512656666;
+    devDynamicContent.TAFEDynamicBanners_300x600[0].ad_name = "Animal,_Agriculture_&_Environment_Hunter_Institute_1";
+    devDynamicContent.TAFEDynamicBanners_300x600[0].campus_location = "Hunter Institute";
     devDynamicContent.TAFEDynamicBanners_300x600[0].course_area = "Animal, Agriculture & Environment";
     devDynamicContent.TAFEDynamicBanners_300x600[0].logo = {};
     devDynamicContent.TAFEDynamicBanners_300x600[0].logo.Type = "file";
     devDynamicContent.TAFEDynamicBanners_300x600[0].logo.Url = "https://s0.2mdn.net/ads/richmedia/studio/60006638/60006638_20180816165558087_logos.png";
     devDynamicContent.TAFEDynamicBanners_300x600[0].hero_image = {};
     devDynamicContent.TAFEDynamicBanners_300x600[0].hero_image.Type = "file";
-    devDynamicContent.TAFEDynamicBanners_300x600[0].hero_image.Url = "https://s0.2mdn.net/ads/richmedia/studio/60006638/60006638_20180902192002173_animal_agriculture_environmental_studies_300x600.png";
+    devDynamicContent.TAFEDynamicBanners_300x600[0].hero_image.Url = "https://s0.2mdn.net/ads/richmedia/studio/60006638/60006638_20180920241650817_animal_agriculture_environmental_studies_300x600.png";
     devDynamicContent.TAFEDynamicBanners_300x600[0].be_image1 = {};
     devDynamicContent.TAFEDynamicBanners_300x600[0].be_image1.Type = "file";
     devDynamicContent.TAFEDynamicBanners_300x600[0].be_image1.Url = "https://s0.2mdn.net/ads/richmedia/studio/60006638/60006638_20180619211011149_be_1.png";
@@ -54,10 +59,10 @@ boilerplate.DynamicContentElements = function () {
     devDynamicContent.TAFEDynamicBanners_300x600[0].frame1ButtonText = "BE AMBITIOUS";
     devDynamicContent.TAFEDynamicBanners_300x600[0].frame2HeadlineText = "BE EMPLOYED.";
     devDynamicContent.TAFEDynamicBanners_300x600[0].frame2SubText = "Explore <span>Animal, Agriculture & Environment<\/span> courses";
-    devDynamicContent.TAFEDynamicBanners_300x600[0].frame3Text = "at the <span>Riverina Institute<\/span> region.";
+    devDynamicContent.TAFEDynamicBanners_300x600[0].frame3Text = "at the <span>Hunter Institute<\/span>.";
     devDynamicContent.TAFEDynamicBanners_300x600[0].frame4Text = "Enrolments are now open!";
     devDynamicContent.TAFEDynamicBanners_300x600[0].fontSize_Text = 18;
-    devDynamicContent.TAFEDynamicBanners_300x600[0].rtoCode = "RTO 91430";
+    devDynamicContent.TAFEDynamicBanners_300x600[0].rtoCode = "RTO 90003";
     devDynamicContent.TAFEDynamicBanners_300x600[0].buttonText = "ENROL NOW";
     devDynamicContent.TAFEDynamicBanners_300x600[0].buttonColour = "#000000";
     devDynamicContent.TAFEDynamicBanners_300x600[0].buttonTextColour = "#FFFFFF";

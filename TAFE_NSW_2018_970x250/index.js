@@ -17,9 +17,13 @@ function init() {
 }
 
 boilerplate.processAd = function () {
-	document.getElementById("banner").className = "show"; //show banner
-	boilerplate.executeAnimation();
 	boilerplate.DynamicContentElements();
+	
+	var heroImg = document.getElementById("leftper");//Load hero image
+	heroImg.onload = function() {
+		document.getElementById("banner").className = "show"; //show banner
+		boilerplate.executeAnimation();
+	};
 }
 
 boilerplate.DynamicContentElements = function () {
